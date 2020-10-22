@@ -1,8 +1,8 @@
 meta:
-  title: Redocly Training
-  description: The best API documentation generator ever.
-  siteUrl: https://portal-demo.redoc.ly
-headerIcon: ./images/logo.png
+  title: Pawfully Pet Shop
+  description: Redocly Demo API Portal
+  siteUrl: https://pawfully.redoc.ly
+headerIcon: ./images/favicon2.png
 enableToc: true
 oasDefinitions:
   petstore: ./openapi/petstore.yaml
@@ -17,6 +17,8 @@ stylesheets:
 #scripts:
 #  - ./static/intercom.js
 nav:
+  - label: Yuhu my first page
+    page: developer-portal/plain.md
 
   - label: Training exercises
     page: developer-portal/index.md

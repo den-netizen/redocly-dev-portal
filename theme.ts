@@ -15,43 +15,43 @@ export const theme = {
   colors: {
     // tonalOffset: 0.2,
     primary: {
-      main: '#227a88',
-      // light: ({ colors }) => lighten(colors.tonalOffset, colors.primary.main),
-      // dark: ({ colors }) => darken(colors.tonalOffset, colors.primary.main),
-      // contrastText: ({ colors }) => readableColor(colors.primary.main),
+      main: '#DA291C',
+      light: ({ colors }) => lighten(colors.tonalOffset, colors.primary.main),
+      dark: ({ colors }) => darken(colors.tonalOffset, colors.primary.main),
+      contrastText: ({ colors }) => readableColor(colors.primary.main),
     },
-    // success: {
-    //   main: '#00aa13',
-    //   light: ({ colors }) => lighten(colors.tonalOffset * 3, colors.success.main),
-    //   dark: ({ colors }) => darken(colors.tonalOffset, colors.success.main),
-    //   contrastText: ({ colors }) => readableColor(colors.success.main),
-    // },
-    // error: {
-    //   main: '#e53935',
-    //   light: ({ colors }) => lighten(colors.tonalOffset * 2, colors.error.main),
-    //   dark: ({ colors }) => darken(colors.tonalOffset, colors.error.main),
-    //   contrastText: ({ colors }) => readableColor(colors.error.main),
-    // },
-    // warning: {
-    //   main: '#d4ad03',
-    //   light: ({ colors }) => lighten(colors.tonalOffset * 2, colors.warning.main),
-    //   dark: ({ colors }) => darken(colors.tonalOffset, colors.warning.main),
-    //   contrastText: ({ colors }) => readableColor(colors.warning.main),
-    // },
-    // info: {
-    //   main: '#4782cb',
-    //   light: ({ colors }) => lighten(colors.tonalOffset * 2, colors.info.main),
-    //   dark: ({ colors }) => darken(colors.tonalOffset, colors.info.main),
-    //   contrastText: ({ colors }) => readableColor(colors.info.main),
-    // },
+    success: {
+      main: '#00aa13',
+      light: ({ colors }) => lighten(colors.tonalOffset * 3, colors.success.main),
+      dark: ({ colors }) => darken(colors.tonalOffset, colors.success.main),
+      contrastText: ({ colors }) => readableColor(colors.success.main),
+    },
+    error: {
+      main: '#8A190C',
+      light: ({ colors }) => lighten(colors.tonalOffset * 2, colors.error.main),
+      dark: ({ colors }) => darken(colors.tonalOffset, colors.error.main),
+      contrastText: ({ colors }) => readableColor(colors.error.main),
+    },
+    warning: {
+      main: '#d4ad03',
+      light: ({ colors }) => lighten(colors.tonalOffset * 2, colors.warning.main),
+      dark: ({ colors }) => darken(colors.tonalOffset, colors.warning.main),
+      contrastText: ({ colors }) => readableColor(colors.warning.main),
+    },
+    info: {
+      main: '#8A190C',
+      light: ({ colors }) => lighten(colors.tonalOffset * 2, colors.info.main),
+      dark: ({ colors }) => darken(colors.tonalOffset, colors.info.main),
+      contrastText: ({ colors }) => readableColor(colors.info.main),
+    },
     text: {
-      primary: '#424242',
-      // secondary: '#4e566d',
+      primary: '#333333',
+      secondary: '#666666',
     },
-    // border: {
-    //   dark: 'rgba(0,0,0, 0.15)',
-    //   light: '#ffffff',
-    // },
+    border: {
+      dark: 'rgba(0,0,0, 0.15)',
+      light: '#ffffff',
+    },
     // responses: {
     //   success: {
     //     color: ({ colors }) => colors.success.main,
@@ -81,19 +81,19 @@ export const theme = {
       link: '#31bbb6',
       head: '#c167e4',
     },
-    // navbar: {
-    //   main: ({ colors }) => colors.primary.main,
-    //   gradient: ({ colors }) => darken(colors.tonalOffset / 2, colors.navbar.main),
-    //   contrastText: 'white'
-    // },
-    // footer: {
-      // main: ({ colors }) => colors.primary.main,
-      // contrastText: 'white'
-    // },
+    navbar: {
+      main: ({ colors }) => colors.primary.main,
+      gradient: ({ colors }) => darken(colors.tonalOffset / 2, colors.navbar.main),
+      contrastText: 'white'
+    },
+    footer: {
+      main: ({ colors }) => colors.primary.main,
+      contrastText: 'white'
+    },
   },
 
   sidebar: {
-    backgroundColor: '#fafafa',
+    backgroundColor: '#CCCCCC',
     width: '260px',
   },
   // tocPanel: {
@@ -106,9 +106,9 @@ export const theme = {
     fontWeightRegular: '400',
     fontWeightBold: '600',
     fontWeightLight: '300',
-    fontFamily: '"Source Sans Pro", sans-serif',
+    fontFamily: '"Noto Sans", sans-serif',
     headings: {
-      fontFamily: '"Source Sans Pro", sans-serif',
+      fontFamily: '"Noto Sans", sans-serif',
       fontWeight: '600',
     },
     // heading1: {
@@ -146,9 +146,9 @@ export const theme = {
     // },
     code: {
       fontSize: '14px',
-      fontFamily: 'Courier, monospace',
+      fontFamily: 'Noto Sans JP, monospace',
       fontWeight: ({ typography }) => typography.fontWeightRegular,
-      color: '#e53935',
+      color: '#DA291C',
       backgroundColor: 'rgba(38, 50, 56, 0.04)',
       wrap: false,
     },
@@ -159,13 +159,13 @@ export const theme = {
     },
   },
   rightPanel: {
-    backgroundColor: '#263238',
+    backgroundColor: '#CDCFD0',
     width: '40%',
     // textColor: '#ffffff',
   },
   schema: {
-    nestedBackground: '#fafafa',
-    // linesColor: theme => lighten( theme.colors.tonalOffset, desaturate(theme.colors.tonalOffset, theme.colors.primary.main) ),
+    nestedBackground: '#CDCFD0',
+    // linesColor: theme => lighten( theme.colors.tonalOffset, theme.colors.primary.main),
     // defaultDetailsWidth: '75%',
     // typeNameColor: theme => theme.colors.text.secondary,
     // typeTitleColor: theme => theme.schema.typeNameColor,
@@ -174,11 +174,12 @@ export const theme = {
     // nestingSpacing: '1em',
     // arrow: {
     //   size: '1.1em',
-    //   color: theme => theme.colors.text.secondary,
+      color: theme => theme.colors.text.secondary,
     // },
   },
-  // codeBlock: {
-  //   backgroundColor: ({ rightPanel }) => darken(0.1, rightPanel.backgroundColor),
-  //   tokens: {},
-  // },
+  codeBlock: {
+    backgroundColor: ({ rightPanel }) => darken(0.1, rightPanel.backgroundColor),
+    tokens: {},
+  },
+
 };
